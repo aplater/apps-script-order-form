@@ -1,25 +1,25 @@
-var form = FormApp.openById(<formID>);
+var form = FormApp.openById(formID);
 var ss = SpreadsheetApp.getActive();
 var individualSheets;
 
 // Boy blazers
-var bbList = form.getItemById(<itemID>).asListItem();
+var bbList = form.getItemById(itemID).asListItem();
 var bb = ss.getSheetByName("Boy Blazers Stock");
   
 // Girl blazers
-var gbList = form.getItemById(<itemID>).asListItem();
+var gbList = form.getItemById(itemID).asListItem();
 var gb = ss.getSheetByName("Girl Blazers Stock");
   
 // Jumpers
-var jList = form.getItemById(<itemID>).asListItem();
+var jList = form.getItemById(itemID).asListItem();
 var j = ss.getSheetByName("Jumpers Stock");
   
 // Cardigans
-var cList = form.getItemById(<itemID>).asListItem();
+var cList = form.getItemById(itemID).asListItem();
 var c = ss.getSheetByName("Cardigans Stock");
     
 // Ties
-var tList = form.getItemById(<itemID>).asListItem();
+var tList = form.getItemById(itemID).asListItem();
 var t = ss.getSheetByName("Tie Stock");
 
 // Waiting List
