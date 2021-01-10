@@ -1,25 +1,25 @@
-var form = FormApp.openById("14TjHqR58_R-9pThgoJxs91YgyKQwI06STRyGKQ6859U");
+var form = FormApp.openById(<formID>);
 var ss = SpreadsheetApp.getActive();
 var individualSheets;
 
 // Boy blazers
-var bbList = form.getItemById("2849633").asListItem();
+var bbList = form.getItemById(<itemID>).asListItem();
 var bb = ss.getSheetByName("Boy Blazers Stock");
   
 // Girl blazers
-var gbList = form.getItemById("1356827239").asListItem();
+var gbList = form.getItemById(<itemID>).asListItem();
 var gb = ss.getSheetByName("Girl Blazers Stock");
   
 // Jumpers
-var jList = form.getItemById("1845008148").asListItem();
+var jList = form.getItemById(<itemID>).asListItem();
 var j = ss.getSheetByName("Jumpers Stock");
   
 // Cardigans
-var cList = form.getItemById("180315175").asListItem();
+var cList = form.getItemById(<itemID>).asListItem();
 var c = ss.getSheetByName("Cardigans Stock");
     
 // Ties
-var tList = form.getItemById("1026767638").asListItem();
+var tList = form.getItemById(<itemID>).asListItem();
 var t = ss.getSheetByName("Tie Stock");
 
 // Waiting List
